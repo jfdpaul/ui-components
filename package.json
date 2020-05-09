@@ -1,0 +1,33 @@
+{
+  "name": "ui-components",
+  "version": "0.1.0",
+  "author": "Jonathan Fidelis Paul",
+  "main": "src/features/index.js",
+  "module": "src/features/index.js",
+  "private": true,
+  "dependencies": {
+    "node-sass-chokidar": "^1.3.3",
+    "npm-run-all": "^4.1.3",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-scripts": "1.1.4",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.88.1"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start-react": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-react",
+    "build-react": "react-scripts build",
+    "build": "npm-run-all -s build-css build-react",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "build-storybook": "getstorybook init"
+  },
+  "devDependencies": {
+    "@storybook/cli": "^5.2.1",
+    "@storybook/react": "^3.4.10"
+  }
+}
