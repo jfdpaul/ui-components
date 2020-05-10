@@ -31,5 +31,10 @@
     "@storybook/cli": "^5.2.1",
     "@storybook/react": "^3.4.10",
     "@storybook/storybook-deployer": "^2.8.5"
+  },
+  "storybook-deployer": {
+    "gitUsername": "jfdpaul",
+    "gitEmail": "jfdpaul@gmail.com",
+    "commitMessage": "Deploy Storybook [skip ci]"
   }
 }
