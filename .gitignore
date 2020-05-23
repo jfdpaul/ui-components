@@ -1,7 +1,7 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
+/node_modules/**/*
 
 # testing
 /coverage
@@ -206,5 +206,3 @@ $RECYCLE.BIN/
 # End of https://www.gitignore.io/api/osx,windows,webstorm,intellij,visualstudiocode
 
 .idea/
-
-src/**/*.css
